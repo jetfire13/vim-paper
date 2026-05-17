@@ -65,6 +65,7 @@ let s:colors = {
 \  'lgrey1': '#d8d5c7',
 \  'lgrey2': '#bfbcaf',
 \  'lgrey3': '#aaaaaa',
+\  'lgrey4': '#d9d5c5',
 \  'yellow': '#b58900',
 \  'lyellow': '#f2de91',
 \  'orange': '#a55000',
@@ -294,8 +295,10 @@ Hi LspInlayHint grey NONE NONE
 hi! link makeTarget Function
 
 " Markdown
+Hi RenderMarkdownCodeInline black lgrey4 NONE
+hi! link RenderMarkdownCode RenderMarkdownCodeInline
+hi! link markdownCodeBlock RenderMarkdownCodeInline
 hi! link markdownCode markdownCodeBlock
-hi! link markdownCodeBlock Comment
 hi! link markdownListMarker Keyword
 hi! link markdownOrderedListMarker Keyword
 
